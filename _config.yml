@@ -1,0 +1,21 @@
+title: Pontos Cardeais
+description: >
+  Aplicativo para uso em sala de aula no projetor 1280x800px.
+instructions: >
+  Indique a direção correta dos locais da cidade em relação ao seu 
+  ponto de referência, através dos pontos cardeais. Selecione um 
+  local e responda a pergunta que aparecerá.
+baseurl: "/jogo-mapa-pontos-cardeais"
+url: "http://copatecnologia.com.br"
+
+markdown: kramdown
+
+exclude:
+  - gulpfile.js
+  - README.md
+
+css:
+  style: compressed
+
+plugins:
+  - jekyll-coffeescript

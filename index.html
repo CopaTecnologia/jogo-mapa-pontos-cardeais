@@ -1,0 +1,54 @@
+---
+---
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pontos cardeais em Santos - Ponta da Praia</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="start">
+    <header class="top clearfix" id="abertura">
+        <div class="placa popup">
+            <h1>{{ site.title }}</h1>
+            <h2>Ponta da Praia - Santos, SP</h2>
+            <p>{{ site.instructions }}</p>
+            <p><a href="#start" class="btn" id="iniciar">Começar</a></p>
+        </div>
+    </header>
+    <section class="mapa" id="mapa">
+        <div class="overlay"></div>
+        <a href="javascript:;" class="ir local" id="campo" data-nome="Campo de futebol" data-direcao="noroeste"></a>
+        <a href="javascript:;" class="ir local" id="aquario" data-nome="Aquário Municipal" data-direcao="oeste"></a>
+        <a href="javascript:;" class="ir local" id="museu" data-nome="Museu de Pesca de Santos" data-direcao="sudoeste"></a>
+        <a href="javascript:;" class="ir local" id="praca" data-nome="Praça Eng. José Rebouças" data-direcao="norte"></a>
+        <a href="javascript:;" class="ir local" id="balsa" data-nome="Ferry Boat" data-direcao="leste"></a>
+        <a href="javascript:;" class="ir local" id="armazens" data-nome="Armazéns do cais" data-direcao="nordeste"></a>
+        <a href="javascript:;" class="ir local" id="guaruja" data-nome="Guarujá" data-direcao="sul"></a>
+        <a href="javascript:;" class="ir local" id="colegio" data-nome="Colégio" data-direcao="ref"></a>
+    </section>
+    <div class="popup" id="dialogo">
+        <div class="container">
+            <a href="#" class="fechar">X</a>
+            <h1 class="title">Nome do local</h1>
+            <p class="msg">Em qual direção fica este local?</p>
+            <menu>
+                <li><a href="javascript:;" data-direcao="noroeste">Noroeste</a></li>
+                <li><a href="javascript:;" data-direcao="norte">Norte</a></li>
+                <li><a href="javascript:;" data-direcao="nordeste">Nordeste</a></li>
+                <li><a href="javascript:;" data-direcao="oeste">Oeste</a></li>
+                <li class="rosa"></li>
+                <li><a href="javascript:;" data-direcao="leste">Leste</a></li>
+                <li><a href="javascript:;" data-direcao="sudoeste">Sudoeste</a></li>
+                <li><a href="javascript:;" data-direcao="sul">Sul</a></li>
+                <li><a href="javascript:;" data-direcao="sudeste">Sudeste</a></li>
+            </menu>
+        </div>
+    </div>
+    <a href="#" class="btn appinfo">!</a>
+    <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+.popup 
+    background: url('../img/light_wool.png') #f7f7f7
+    border: solid 3px #ccc
+    padding: 20px
+
+#dialogo
+    position: fixed
+    width: 600px
+    top: 150%
+    left: 50%
+    margin-left: -300px
+    margin-top: -250px
+    z-index: 9999
+    transform: translateY(100%)
+    transition: transform .3s ease-in-out
+
+    &.on
+        top: 50%
+        transform: translateY(0%)
+
+    .container 
+        position: relative
+
+    h1, p 
+        margin: 0
+
+    h4 
+        display: block
+        width: 100%
+        position: absolute
+        bottom: 50%
+        left: 0
+        font-size: 20px
+        text-align: center
+
+    a 
+        text-decoration: none
+        text-align: center
+        font-weight: bold
+        color: #f60
+
+        &.fechar 
+            display: block
+            width: 30px
+            height: 30px
+            font-size: 20px
+            position: absolute
+            top: 0
+            right: 0
+
+    menu 
+        display: block
+        float: left
+        width: 600px
+        margin: 0
+        padding: 0
+        list-style: none
+        background: url('../img/rosa.png') center center no-repeat
+
+        li 
+            display: block
+            width: 200px
+            float: left
+
+            &.rosa 
+                height: 100px
+
+        a 
+            display: block
+            width: 100%
+            padding: 70px 0
+
+            &:hover, &:focus 
+                color: #06f
